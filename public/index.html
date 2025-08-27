@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Badger Generator</title>
+    <title>Badger Generator | iLtc</title>
     <link rel="stylesheet" href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css"/>
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
     <link rel="preload" href="./Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
     <div class="container">
         <div class="input-section">
-            <h1>Badger Press</h1>
-            <label for="githubhandle">GitHub Handle:</label>
-            <input type="text" id="githubhandle" name="githubhandle">
+            <h1>Badger Generator</h1>
             <label for="firstname">First Name:</label>
             <input type="text" id="firstname" name="firstname">
             <label for="lastname">Last Name:</label>
             <input type="text" id="lastname" name="lastname">
-            <label for="company">Company:</label>
-            <input type="text" id="company" name="company">
             <label for="jobtitle">Job Title:</label>
             <input type="text" id="jobtitle" name="jobtitle">
-            <label for="pronouns">Pronouns:</label>
-            <input type="text" id="pronouns" name="pronouns">
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
         </div>
         <div class="preview-section">
             <div class="badge-preview">
                 <canvas id="badgeCanvas" width="296" height="128"></canvas>
                 <div class="badge-preview-buttons">
-                    <!-- button class="btn btn-primary mt-2" onclick="downloadBadge()">
+                    <button class="btn btn-primary mt-2" onclick="downloadBadge()">
                         <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                             <path d="M7.47 10.78a.75.75 0 0 0 1.06 0l3.75-3.75a.75.75 0 0 0-1.06-1.06L8.75 8.44V1.75a.75.75 0 0 0-1.5 0v6.69L4.78 5.97a.75.75 0 0 0-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5z"></path>
                         </svg>
                         Download Image
-                    </button -->
+                    </button>
                     <button class="btn btn-primary mt-2" onclick="copyToBadge()">
                         <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                             <path d="M7.47 10.78a.75.75 0 0 0 1.06 0l3.75-3.75a.75.75 0 0 0-1.06-1.06L8.75 8.44V1.75a.75.75 0 0 0-1.5 0v6.69L4.78 5.97a.75.75 0 0 0-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5z"></path>
@@ -43,13 +38,6 @@
                         Copy to Badge
                     </button>
                 </div>
-            </div>
-            <div class="qr-container">
-                <div id="qrcode"></div>
-            </div>
-            <div class="input-container">
-                <label for="fullstring">Full String:</label>
-                <input type="text" id="fullstring" name="fullstring" readonly>
             </div>
             <div class="help-container">
                 <p>
@@ -59,7 +47,7 @@
                 </p>
                 <p>
                     To learn more about your GitHub Badger 2350, <a href="https://github.com/badger/home">visit the repo</a>.
-                    You can also edit the code running on your Badger directly using the <a href="https://viper-ide.org/">Viper Web IDE</a> or 
+                    You can also edit the code running on your Badger directly using the <a href="https://viper-ide.org/">Viper Web IDE</a> or
                     you can install <a href="https://thonny.org/">Thonny</a> locally.
                 </p>
                 <p>
@@ -72,9 +60,12 @@
     <script src="script.js"></script>
 
     <footer style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #f0f0f0; padding: 10px; text-align: center;">
-        <a href="https://github.com/badger/badger.github.io" target="_blank" style="color: #333; text-decoration: none;">
+        <a href="https://github.com/iLtc/badger" target="_blank" style="color: #333; text-decoration: none;">
             View source</a>
-            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        |
+        <a href="https://badger.github.io/" target="_blank" style="color: #333; text-decoration: none;">
+            GitHub Badger Generator</a>
+        |
         <a href="https://viper-ide.org/" target="_blank" style="color: #333; text-decoration: none;">
             Edit code on badge</a>
     </footer>
